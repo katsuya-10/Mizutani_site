@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo1 {
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #fff;
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* top メッセージ
+------------------------------- */
+
+.top-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.top-content p{
+    font-size: 1.725rem;
+    margin: 10px 0 42px;
+}
+
+/* 見出し */
+.page-title {
+    font-size: 3.5rem;
+    font-family: 'philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background: #b76f0b;
+    color: #fff;
+    border-radius: 13px;
+    background: linear-gradient(145deg, #c4770c, #a5640a);
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #935806;
+}
+
+/* 背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position:center top;
+    background-repeat: no-repeat;
+}
+
+#top {
+    background-image: url(../images/strawberry_1-2.jpg);
+    min-height: 100vh;
+}
+#top .page-title {
+    text-transform: none;
+}
+
+/* sho_farm
+------------------------------- */
+
+#sho_farm {
+    background-image: url(../images/shochan_2.jpg);
+    height: 500px;
+    margin-bottom: 40px;
+}
+#sho_farm .page-title {
+    text-align: left;
+    color: #432;
+    margin-right: 100px;
+}
+
+article {
+  width: 100%;
+}
+.message {
+  color: #432;
+  font-size: 120%;
+}
+.news-contents {
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+/* SNS */
+
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
+}
+
+
+/* commodity
+------------------------------- */
+#commodity {
+  background-image: url(../images/strawberry_2.jpg);
+  min-height: 100vh;
+}
+.commodity-content {
+  max-width: 900px;
+  margin-top: 10%;
+}
+.commodity-content .page-title {
+  text-align: center;
+}
+.commodity-content p {
+  font-size: 150%;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+.commodity-content p {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+  height: 94%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.item p{
+ display:inline-block;
+ vertical-align:top;
+}
+
+
+/* フッター
+------------------------------- */
+footer{
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* 問合せページ
+------------------------------- */
+
+#info {
+  background-image: url(../images/info_2.jpg);
+}
+
+/* フォーム各パーツ */
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* 地図・情報 */
+#location {
+  padding:4% 0;
+}
+#location .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.location-info {
+  width: 22%;
+}
+.location-info p ,h3{
+  padding: 12px 10px;
+  color: #432
+}
+.location-map {
+  width: 74%;
+}
+/* iframe */
+iframe {
+  width: 100%;
+}
+
+/* 携帯
+------------------------------- */
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+  aside {
+    margin-top: 60px;
+  }
+  .message {
+    font-size: 1.375rem;
+  }
+
+  /* HERDER */
+  .main-nav {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .main-nav li {
+    margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content{
+    margin-top: 20px;
+  }
+
+  /* commodity */
+  .commodity-content {
+    margin-top: 20px;
+  }
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .big-box img {
+    height:100%;
+  }
+}
